@@ -6,10 +6,10 @@ on:
   pull_request:
     branches: [ main, master ]
   schedule:
-    - cron: '* * * * *'  # runs every 30 minutes to generate data
+    - cron: '* * * * *'    # runs every 1 minutes to generate data
   workflow_dispatch:         # allows manual trigger from GitHub UI
 
-jobs:
+jobs:  
   build:
     runs-on: ubuntu-latest
     steps:
